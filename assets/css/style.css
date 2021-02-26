@@ -1,0 +1,128 @@
+/* === === === CONFIG GLOBAIS === === === */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:"Roboto", sans-serif;
+}
+
+:root {
+  --color-container: #ecf0f1;
+  --color-content: #fff;
+  --color-pass-div: #58af9b;
+  --color-title: #fff;
+}
+
+#container {
+  height: 100vh;
+  background-color: var(--color-container);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === === === PRIMEIRO CONTEÙDO === === === */
+  /* === === === PRIMEIRA COLUNA === === === */
+.content {
+  border-radius: 15px;
+  background: var(--color-content);
+  width: 80%;
+  height: 70%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    background: var(--color-pass-div);
+    width: 40%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+.first-content {
+  display: flex;
+}
+
+.first-column {
+  text-align: center;
+  width: 40%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.title-primary {
+  color: var(--color-title);
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-title);
+  line-height: 30px;
+}
+
+.list-social-media {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border: none;
+  text-transform: uppercase;
+  color: var(--color-title);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition: 0.5s;
+  margin-top: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-title);
+  color: var(--color-pass-div);
+  font-weight: bold;
+}
+
+  /* === === === SEGUNDA COLUNA === === === */
+.second-column {
+  flex: 2 0 auto;
+  width: 60%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media ul {
+  display: flex;
+}
+
+/* === === === SEGUNDO CONTEÙDO === === === */
+.second-content {
+  position: relative;
+  display: none;
+}
